@@ -40,13 +40,15 @@ def reverse_characters(string_input):
 
     return reversed_string
 
-print(reverse_characters(14))
+print(reverse_characters('apple', ))
 
 
-def empty_list(list):
-  new_list = ''
-  for i in (list):
-    new_list += (reverse_characters(list))
+def empty_list(rev_list):
+  new_list = []
+  for i in (rev_list):
+    new_list.append(reverse_characters(i))
   return new_list
 
-print(empty_list(['apple', 'orange']))
+print(empty_list(list_test1))
+print(empty_list(list_test2))
+print(empty_list(list_test3))
