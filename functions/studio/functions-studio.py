@@ -27,3 +27,26 @@
 list_test1 = ['apple', 'potato', 'Capitalized Words']
 list_test2 = [123, 8897, 42, 1168, 8675309]
 list_test3 = ['hello', 'world', 123, 'orange']
+
+def reverse_characters(string_input):
+    if type(string_input) == str:
+     string_list = list(string_input)
+
+    if type(string_input) == int or float:
+     convert_to_string = str(string_input)
+     string_list = list(convert_to_string)
+    string_list.reverse()
+    reversed_string = "".join(string_list)
+
+    return reversed_string
+
+print(reverse_characters(14))
+
+
+def empty_list(list):
+  new_list = ''
+  for i in (list):
+    new_list += (reverse_characters(list))
+  return new_list
+
+print(empty_list(['apple', 'orange']))
