@@ -32,3 +32,5 @@ if shuttle_altitude >= 2000:
 else:
     orbit_status = 'Failed to reach orbit.'
 print('The shuttle has gained an altitude of ', shuttle_altitude, 'km and has ', fuel_level, 'kg of fuel left. ', orbit_status)
+
+print(2100%4)

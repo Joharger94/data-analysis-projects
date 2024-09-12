@@ -20,16 +20,32 @@ for sublist in strings:
     if ',' in sublist:
         comma = sublist.split(',')
         comma.reverse()
-        new_comma = ','.join(comma)
-        print(new_comma)
+        reversed_comma = ','.join(comma)
+        print(reversed_comma)
 
 
 # c) If the string uses semicolons to separate the words, split it into an array, alphabetize the entries, and then join the array into a new comma separated string.
-
+for sublist in strings:
+    if ';' in sublist:
+        semicolon = sublist.split(';')
+        semicolon.reverse()
+        reversed_semicolon = ';'.join(semicolon)
+        print(reversed_semicolon)
 
 
 # d) If the string uses spaces to separate the words, split it into an array, reverse alphabetize the entries, and then join the array into a new space separated string.
-
+for sublist in strings:
+    if ' ' in sublist:
+        space = sublist.split(' ')
+        space.reverse()
+        reversed_space = ' '.join(space)
+        print(reversed_space)
 
 
 # e) If the string uses ‘comma spaces’ to separate the list, modify your code to produce the same result as part “b”, making sure that the extra spaces are NOT part of the final string.
+for sublist in strings:
+    if ', ' in sublist:
+        comma = sublist.split(', ')
+        comma.reverse()
+        reversed_comma = ','.join(comma)
+        print(reversed_comma)

@@ -32,3 +32,14 @@ else:
         print("Cabinet", select_cargo_bin, "does contain", item_in_bin)
     else:
         print("Cabinet", select_cargo_bin, "does not contain", item_in_bin)
+        
+def is_even(num): 
+   return num % 2 == 0
+
+num = 42
+print(is_even(43))
+def string_repeater(a_string):
+   repeated = a_string + a_string
+   print(repeated)
+
+string_repeater('Bob')
